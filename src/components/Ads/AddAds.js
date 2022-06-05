@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Footer from "../Footer";
 import Header from "../Welcome/Header";
 function AddAds() {
   const [ImgURL, setImgURL] = useState("");
@@ -111,6 +112,7 @@ function AddAds() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

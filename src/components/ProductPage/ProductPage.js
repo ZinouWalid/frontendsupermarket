@@ -8,6 +8,7 @@ import Product from '../Products/Product'
 import ReactPaginate from 'react-paginate'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
+import Footer from '../Footer'
 
 function ProductPage() {
   const [SearchBoolean, setSearchBoolean] = useState(false)
@@ -246,6 +247,7 @@ function ProductPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

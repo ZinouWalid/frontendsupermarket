@@ -4,6 +4,7 @@ import Header from '../Welcome/Header'
 
 import { useEffect, useState } from "react";
 import AdViewAll from "./AdViewAll";
+import Footer from "../Footer";
 
 function AllAds() {
   const [Ads, setAds] = useState([]);
@@ -42,6 +43,7 @@ function AllAds() {
           />
         </div>
       ))}
+      <Footer/>
     </div>
   )
 }

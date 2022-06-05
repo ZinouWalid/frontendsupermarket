@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import AdViewAll from "./AdViewAll";
 import Header from '../Welcome/Header'
+import Footer from "../Footer";
 
 function ShowedAds() {
   const [Ads, setAds] = useState([]);
@@ -41,6 +42,7 @@ function ShowedAds() {
           />
         </div>
       ))}
+      <Footer />
     </div>
   )
 }

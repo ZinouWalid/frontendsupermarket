@@ -2,27 +2,27 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../Welcome/Header'
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
+import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogContent from '@mui/material/DialogContent'
+import DialogContentText from '@mui/material/DialogContentText'
+import DialogTitle from '@mui/material/DialogTitle'
+import Footer from '../Footer'
 
 function ModifyProductpage() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false)
 
   const handleClickOpen = () => {
-    setOpen(true);
-  };
+    setOpen(true)
+  }
 
   const handleClose = () => {
     window.history.back()
 
-    setOpen(false);
+    setOpen(false)
+  }
 
-  };
- 
   let Productid = useParams()
   console.log(Productid)
   const [Product, setProduct] = useState({})
@@ -106,7 +106,7 @@ function ModifyProductpage() {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div className='h-screen flex justify-center items-center -mt-8'>
         <div className='flex flex-col justify-center border-slate-900 border-[2px] rounded-lg p-4'>
           <h3 className='text-3xl font-semibold my-4'>
@@ -151,7 +151,7 @@ function ModifyProductpage() {
               name='usrnm'
               value={Promontion}
               onChange={(e) => {
-                setPromontion(e.target.value+' out of 5')
+                setPromontion(e.target.value + ' out of 5')
               }}
             />
           </div>
@@ -217,27 +217,28 @@ function ModifyProductpage() {
             Mis à jour
           </button>
           <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">
-          {"Succes Alerte !!"}
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-          produit mis à jour avec succès
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} autoFocus>
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
+            open={open}
+            onClose={handleClose}
+            aria-labelledby='alert-dialog-title'
+            aria-describedby='alert-dialog-description'
+          >
+            <DialogTitle id='alert-dialog-title'>
+              {'Succes Alerte !!'}
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id='alert-dialog-description'>
+                produit mis à jour avec succès
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={handleClose} autoFocus>
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

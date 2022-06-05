@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Footer from '../Footer'
 import Header from '../Welcome/Header'
 
 function AddDeliveryMan() {
@@ -202,6 +203,7 @@ function AddDeliveryMan() {
         </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
