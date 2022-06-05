@@ -66,10 +66,10 @@ function AddproductPage() {
       
   }
   return (
-    <div className=''>
+    <div className='w-screen'>
       <Header />
       <div className='h-screen flex justify-center items-center -mt-4'>
-        <div className='flex flex-col justify-center border-slate-900 border-[2px] rounded-lg p-4'>
+        <div className='flex flex-col justify-center border-slate-900 border-[2px] rounded-lg p-4 w-3/6'>
           <h3 className='text-3xl font-semibold my-4'>
             Ajouter un nouveau produit :
           </h3>
@@ -173,25 +173,25 @@ function AddproductPage() {
             Ajouter
           </button>
           <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">
-          {"Succes Alerte !!"}
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-          Votre Produit a été bien Ajouté.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} autoFocus>
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
+            open={open}
+            onClose={handleClose}
+            aria-labelledby='alert-dialog-title'
+            aria-describedby='alert-dialog-description'
+          >
+            <DialogTitle id='alert-dialog-title'>
+              {'Succes Alerte !!'}
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id='alert-dialog-description'>
+                Votre Produit a été bien Ajouté.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={handleClose} autoFocus>
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ function ProductPage() {
         .then(function (response) {
           console.log('data :' + JSON.stringify(response.data))
           const total = response.data.product
-          setpageCount(Math.ceil(total / limit)-1)
+          setpageCount(Math.ceil(total / limit) - 1)
         })
         .catch(function (error) {
           console.log(error)
@@ -187,11 +187,11 @@ function ProductPage() {
             onChange={(e) => {
               setSearch(e.target.value)
             }}
-            className=' flex-1 rounded-l border-none px-2 outline-none h-6 md:h-10'
+            className=' flex-1 rounded-md border-none px-2 outline-none h-6 md:h-10'
             placeholder='Cherchez un produit, une marque ou une catégorie'
           />
           <button
-            className='border-1 h-6 rounded-r border-black bg-amber-400 px-1 hover:bg-amber-500 md:px-2 md:h-10 lg:px-3 '
+            className=' ml-4 border-1 h-6 rounded-md border-black bg-amber-400 px-3 hover:bg-amber-500 md:px-2 lg:h-11 '
             onClick={SearchButton}
           >
             <SearchIcon />

@@ -3,16 +3,15 @@ import Header from '../Welcome/Header'
 
 function AddDeliveryMan() {
   return (
-      <div>
-    <div className=''>
+    <div className='w-screen'>
       <Header />
       <div className="adddeliverydiv">
           
       
-      <div className='mt-8 border-slate-700 m-auto w-full max-w-md rounded-lg border bg-white px-1'>
-        <div className='text-primary m-6'>
+      <div className='mt-8 border-slate-700 m-auto  rounded-lg border bg-white px-1 w-3/6'>
+        <div className=' m-6'>
           <div className='mt-3 flex items-center justify-center'>
-            <h1 className='text-primary mt-4 mb-2 text-2xl font-medium'>
+            <h1 className='mt-4 mb-2 text-2xl font-medium'>
               Créez votre compte
             </h1>
           </div>
@@ -27,7 +26,7 @@ function AddDeliveryMan() {
               
               placeholder='nom'
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
               }
               required
             />
@@ -42,7 +41,7 @@ function AddDeliveryMan() {
               
               placeholder='E-mail'
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
               }
               required
             />
@@ -55,7 +54,7 @@ function AddDeliveryMan() {
             <div className='flex'>
               <p
                 className={
-                  'text-primary mb-4 rounded-md border p-2 text-sm outline-none'
+                  ' mb-4 rounded-md border p-2 text-sm outline-none'
                 }
               >
                 +213
@@ -66,7 +65,7 @@ function AddDeliveryMan() {
                 
                 placeholder='0000 000 000'
                 className={
-                  'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                  ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
                 }
                 reaquired
               />
@@ -80,7 +79,7 @@ function AddDeliveryMan() {
               name='haveMoto'
               
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
               }
               required
             >
@@ -98,7 +97,7 @@ function AddDeliveryMan() {
               name='havePermis'
               
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
               }
               required
             >
@@ -116,7 +115,7 @@ function AddDeliveryMan() {
               name='militaryFree'
              
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
               }
               required
             >
@@ -134,7 +133,7 @@ function AddDeliveryMan() {
               name='region'
               
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
               }
               required
             >
@@ -152,7 +151,7 @@ function AddDeliveryMan() {
               type='date'
               
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out cursor-pointer'
               }
               required
             />
@@ -168,7 +167,7 @@ function AddDeliveryMan() {
               
               placeholder='mot de passe'
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
               }
               minLength='6'
               required
@@ -184,7 +183,7 @@ function AddDeliveryMan() {
              
               placeholder='mot de passse'
               className={
-                'text-primary mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
+                ' mb-4 w-full rounded-md border p-2 text-sm outline-none transition duration-150 ease-in-out'
               }
               required
             />
@@ -203,7 +202,6 @@ function AddDeliveryMan() {
         </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }
